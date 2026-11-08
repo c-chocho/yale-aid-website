@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "eyebrow": "Yale Assistive Innovation and Design",
+    "title": "Assistive technology built by Yale students",
+    "text": "Engineers and medical students designing open-source devices with the people who know the need firsthand, then giving them away at no cost. **Eight projects are in build this year.**",
+    "image": "img/club/cad-review.jpg",
+    "imageAlt": "Y-AID students reviewing a 3D model of a prosthetic on a large screen"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Built around the people who use it",
+    "text": "We work with disabled people, patients, clinicians and caregivers to understand the barriers they meet, then design and refine practical devices around their feedback. From rehabilitation tools to everyday hospital equipment, the aim is the same: useful technology that more people can reach.",
+    "image": "img/club/scale-build.jpg",
+    "imageAlt": "Y-AID students assembling a prototype at a workbench"
+  },
+  "stats": {
+    "eyebrow": "Y-AID in numbers",
+    "title": "Building free devices since 2020",
+    "text": "Founded as Yale e-NABLE, the club became Y-AID and a Tikkun Olam Makers chapter in 2025.",
+    "items": [
+      { "number": "8", "label": "Projects in build" },
+      { "number": "3", "label": "Projects concluded" },
+      { "number": "9", "label": "Student leaders" },
+      { "number": "$0", "label": "Cost to the people we serve" }
+    ]
+  },
+  "featured": {
+    "eyebrow": "In the workshop now",
+    "title": "Featured projects"
+  },
+  "mission": {
+    "eyebrow": "Our mission",
+    "quote": "Free, customizable assistive devices for those in need across Greater New Haven.",
+    "cite": "From the Y-AID mission statement"
+  },
+  "affiliations": {
+    "eyebrow": "Who we work with",
+    "title": "Affiliations",
+    "text": "Y-AID builds with support from Yale engineering and medicine, and with clinicians who refer the people we design for."
+  },
+  "close": {
+    "eyebrow": "Get involved",
+    "title": "Engineers, designers, pre-meds and coders all build here.",
+    "big": "Build *with* us."
+  }
+}

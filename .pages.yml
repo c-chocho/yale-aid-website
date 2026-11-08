@@ -1,0 +1,577 @@
+# Pages CMS editor (https://pagescms.org). Every save commits to GitHub and republishes the site.
+# Photos: upload any size; the site crops them to fit. Use **bold**, *italic* and [link](page.html) in text.
+
+media:
+  input: img
+  output: img
+content:
+- name: home
+  label: Home page
+  type: file
+  path: content/home.json
+  format: json
+  fields:
+  - name: hero
+    label: Top of page
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Intro text
+      type: text
+    - name: image
+      label: Background photo
+      type: image
+    - name: imageAlt
+      label: Photo description (for screen readers)
+      type: string
+  - name: about
+    label: About section
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: image
+      label: Photo
+      type: image
+    - name: imageAlt
+      label: Photo description
+      type: string
+  - name: stats
+    label: Numbers band
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: items
+      label: Numbers
+      type: object
+      list: true
+      fields:
+      - name: number
+        label: Number
+        type: string
+      - name: label
+        label: Label
+        type: string
+  - name: featured
+    label: Featured projects heading (tick "Featured" on up to 3 projects)
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+  - name: mission
+    label: Mission quote
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: quote
+      label: Quote
+      type: text
+    - name: cite
+      label: Source line
+      type: string
+  - name: affiliations
+    label: Affiliations heading (the list itself is under Site settings)
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: close
+    label: Closing band
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: big
+      label: Large closing words (*word* turns light blue)
+      type: string
+- name: about
+  label: About page
+  type: file
+  path: content/about.json
+  format: json
+  fields:
+  - name: hero
+    label: Top of page
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Intro text
+      type: text
+    - name: image
+      label: Banner photo
+      type: image
+    - name: imageAlt
+      label: Photo description (for screen readers)
+      type: string
+  - name: mission
+    label: Mission statement
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: paragraphs
+      label: Paragraphs
+      type: text
+      list: true
+    - name: image
+      label: Photo
+      type: image
+    - name: imageAlt
+      label: Photo description
+      type: string
+  - name: history
+    label: History timeline
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: events
+      label: Timeline entries
+      type: object
+      list: true
+      fields:
+      - name: year
+        label: Year
+        type: string
+      - name: title
+        label: Title
+        type: string
+      - name: text
+        label: Text
+        type: text
+  - name: affiliations
+    label: Affiliations heading (the list itself is under Site settings)
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: close
+    label: Closing band
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: big
+      label: Large closing words (*word* turns light blue)
+      type: string
+- name: projects
+  label: Projects
+  type: file
+  path: content/projects.json
+  format: json
+  fields:
+  - name: hero
+    label: Top of page
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Intro text
+      type: text
+    - name: image
+      label: Banner photo
+      type: image
+    - name: imageAlt
+      label: Photo description (for screen readers)
+      type: string
+  - name: currentIntro
+    label: Current projects heading
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: current
+    label: Current projects
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Project name
+      type: string
+    - name: category
+      label: Filter category
+      type: select
+      options:
+        values:
+        - value: rehab
+          label: Rehabilitation
+        - value: hospital
+          label: Hospital care
+        - value: prosthetics
+          label: Prosthetics
+        - value: mobility
+          label: Mobility
+    - name: tag
+      label: Small label above the name
+      type: string
+    - name: description
+      label: Description
+      type: text
+    - name: stage
+      label: Stage (e.g. In design)
+      type: string
+    - name: partner
+      label: Partner line
+      type: string
+    - name: image
+      label: Photo
+      type: image
+    - name: imageAlt
+      label: Photo description
+      type: string
+    - name: featured
+      label: Featured on the home page
+      type: boolean
+  - name: pastIntro
+    label: Concluded projects heading
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: past
+    label: Concluded projects
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Project name
+      type: string
+    - name: tag
+      label: Small label above the name
+      type: string
+    - name: description
+      label: Description
+      type: text
+    - name: started
+      label: Start line (e.g. Started 2022)
+      type: string
+    - name: image
+      label: Photo
+      type: image
+    - name: imageAlt
+      label: Photo description
+      type: string
+  - name: close
+    label: Closing band
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: big
+      label: Large closing words (*word* turns light blue)
+      type: string
+- name: team
+  label: Team
+  type: file
+  path: content/team.json
+  format: json
+  fields:
+  - name: hero
+    label: Top of page
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Intro text
+      type: text
+    - name: image
+      label: Banner photo
+      type: image
+    - name: imageAlt
+      label: Photo description (for screen readers)
+      type: string
+  - name: boardIntro
+    label: Board heading
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: board
+    label: Executive board
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: role
+      label: Position
+      type: string
+    - name: year
+      label: Class year
+      type: string
+    - name: photo
+      label: Photo (leave empty to show initials)
+      type: image
+  - name: managersIntro
+    label: Project managers heading
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: managers
+    label: Project managers
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: role
+      label: Position
+      type: string
+    - name: year
+      label: Class year
+      type: string
+    - name: photo
+      label: Photo (leave empty to show initials)
+      type: image
+  - name: advisor
+    label: Faculty advisor
+    type: object
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: role
+      label: Title
+      type: string
+    - name: text
+      label: About
+      type: text
+    - name: photo
+      label: Photo
+      type: image
+  - name: close
+    label: Closing band
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: big
+      label: Large closing words (*word* turns light blue)
+      type: string
+- name: contact
+  label: Contact page
+  type: file
+  path: content/contact.json
+  format: json
+  fields:
+  - name: hero
+    label: Top of page
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Intro text
+      type: text
+    - name: image
+      label: Banner photo
+      type: image
+    - name: imageAlt
+      label: Photo description (for screen readers)
+      type: string
+  - name: reasonsIntro
+    label: Reasons heading
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: text
+      label: Text
+      type: text
+  - name: reasons
+    label: Reasons to email (the first three link from the menu)
+    type: object
+    list: true
+    fields:
+    - name: title
+      label: Title
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: button
+      label: Button text
+      type: string
+    - name: subject
+      label: Email subject line
+      type: string
+  - name: close
+    label: Closing band
+    type: object
+    fields:
+    - name: eyebrow
+      label: Small heading
+      type: string
+    - name: title
+      label: Heading
+      type: string
+    - name: big
+      label: Large closing words (*word* turns light blue)
+      type: string
+- name: site
+  label: Site settings
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: name
+    label: Short name
+    type: string
+  - name: fullName
+    label: Full name
+    type: string
+  - name: footerAbout
+    label: Footer description
+    type: text
+  - name: contactName
+    label: Contact person
+    type: string
+  - name: contactRole
+    label: Contact's position
+    type: string
+  - name: contactYear
+    label: Contact's class year
+    type: string
+  - name: contactEmail
+    label: Contact email
+    type: string
+  - name: yaleConnectUrl
+    label: Yale Connect link
+    type: string
+  - name: photoCredits
+    label: Photo credits (footer)
+    type: text
+  - name: affiliations
+    label: Affiliations
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: description
+      label: Description
+      type: string

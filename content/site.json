@@ -1,0 +1,19 @@
+{
+  "name": "Y-AID",
+  "fullName": "Yale Assistive Innovation & Design",
+  "footerAbout": "A Yale undergraduate organization and Tikkun Olam Makers chapter, formerly Yale e-NABLE, building free assistive devices for the Greater New Haven community.",
+  "contactName": "Ramy Triki",
+  "contactRole": "President",
+  "contactYear": "2028",
+  "contactEmail": "ramy.triki@yale.edu",
+  "yaleConnectUrl": "https://yaleconnect.yale.edu/",
+  "photoCredits": "Photographs: Y-AID and Yale e-NABLE. Stand-in photographs from Wikimedia Commons: Intel Free Press (CC BY-SA 2.0), Blogotron (CC0), Pradana Aumars (CC BY-SA 4.0).",
+  "affiliations": [
+    { "name": "TOM", "description": "Tikkun Olam Makers: Y-AID is a chapter of the global network" },
+    { "name": "Tsai CITY", "description": "Tsai Center for Innovative Thinking at Yale" },
+    { "name": "Yale SEAS", "description": "Yale School of Engineering & Applied Science" },
+    { "name": "Yale CEID", "description": "Center for Engineering Innovation & Design" },
+    { "name": "Milford Clinic", "description": "Bridgeport Hospital, Milford Campus rehabilitation team" },
+    { "name": "Yale Orthopaedics", "description": "Department of Orthopaedics & Rehabilitation, Yale School of Medicine" }
+  ]
+}

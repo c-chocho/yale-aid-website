@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "eyebrow": "Leadership 2026–27",
+    "title": "The nine students who lead Y-AID",
+    "text": "Five board members run the club: its registration, funding, outreach and the division of design teams. Four project managers lead the teams and stay in touch with each device's recipient.",
+    "image": "img/club/team-2026.jpg",
+    "imageAlt": "Y-AID members standing together at a buildathon"
+  },
+  "boardIntro": {
+    "eyebrow": "Executive board",
+    "title": "The board",
+    "text": "The board keeps contact with SEAS, the CEID and our faculty advisor, assigns projects and runs the annual buildathon."
+  },
+  "board": [
+    { "name": "Ramy Triki", "role": "President", "year": "2028", "photo": "img/people/ramy-triki.jpg" },
+    { "name": "Ray Niday", "role": "Vice President", "year": "2028", "photo": "img/people/ray-niday.jpg" },
+    { "name": "Maria Drabkin", "role": "Co-Vice President", "year": "2028", "photo": "img/people/maria-drabkin.jpg" },
+    { "name": "Joyce Jiang", "role": "Treasurer & Secretary", "year": "2029", "photo": "img/people/joyce-jiang.jpg" },
+    { "name": "Christopher Cho", "role": "Outreach Chair", "year": "2029", "photo": "img/people/christopher-cho.jpg" }
+  ],
+  "managersIntro": {
+    "eyebrow": "Project managers",
+    "title": "The project managers",
+    "text": "Each manager takes charge of projects assigned by the vice presidents and works directly with recipients on what they want and need."
+  },
+  "managers": [
+    { "name": "Mashnoov Chowdhury", "role": "Project manager", "year": "2028", "photo": "img/people/mashnoov-chowdhury.jpg" },
+    { "name": "Jessie Pham", "role": "Project manager", "year": "2029", "photo": "img/people/jessie-pham.jpg" },
+    { "name": "Aryeh Hirshaut", "role": "Project manager", "year": "2029", "photo": "img/people/aryeh-hirshaut.jpg" },
+    { "name": "Lauren Thelwell", "role": "Project manager", "year": "2027", "photo": "" }
+  ],
+  "advisor": {
+    "name": "Daniel Wiznia, MD",
+    "role": "Faculty advisor",
+    "text": "An orthopaedic surgeon at the Yale School of Medicine, Dr. Wiznia gives the club medical expertise and guidance from his clinical experience.",
+    "photo": "img/people/daniel-wiznia.jpg"
+  },
+  "close": {
+    "eyebrow": "Join the team",
+    "title": "Every leader here started on a project team.",
+    "big": "Start on *a team.*"
+  }
+}

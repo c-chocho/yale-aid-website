@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "eyebrow": "About Y-AID",
+    "title": "Yale's student chapter for assistive design",
+    "text": "Formerly Yale e-NABLE and now a Tikkun Olam Makers chapter, Y-AID is a student-led coalition of engineers and medical students creating open-source assistive technology.",
+    "image": "img/club/printer-build.jpg",
+    "imageAlt": "Two students adjusting a large 3D printer frame"
+  },
+  "mission": {
+    "eyebrow": "Mission statement",
+    "title": "Healthcare built with the community",
+    "paragraphs": [
+      "Yale Assistive Innovation and Design, formerly Yale e-NABLE and a current TOM chapter, seeks to contribute to the Greater New Haven community by providing free, customizable assistive devices to those in need.",
+      "Using both TOM-based and original designs, Y-AID plays a unique role in providing much-needed healthcare in collaboration with engineers, clinicians and community members."
+    ],
+    "image": "img/club/mold-day.jpg",
+    "imageAlt": "Three students in masks and gloves casting silicone parts in the lab"
+  },
+  "history": {
+    "eyebrow": "Organization history",
+    "title": "From Yale e-NABLE to Y-AID",
+    "text": "Six years of building, from one printed hand to eight projects with hospitals and clinics.",
+    "events": [
+      { "year": "2020", "title": "An official e-NABLE chapter", "text": "Yale e-NABLE joined the international e-NABLE network in January after printing its first prototype hand under founder Grayson Wagner, BS ’23." },
+      { "year": "2021", "title": "The cello arm", "text": "In November the club made the cover of Yale Engineering magazine with a prosthetic designed for an 11-year-old so she could play the cello." },
+      { "year": "2023–24", "title": "Davis and Williams projects", "text": "The club built up two long-term projects: the Davis project, an active arm support, and the Williams project, a pediatric arm prosthetic." },
+      { "year": "2024–25", "title": "A cello app and a wheelchair scale", "text": "The team added a mobile app to the cello project, continued the Davis and Williams builds, and started the wheelchair scale." },
+      { "year": "2025", "title": "Y-AID and TOM", "text": "The club became Yale Assistive Innovation and Design and joined the global network of Tikkun Olam Makers chapters, taking on larger projects and buildathons." },
+      { "year": "2026–27", "title": "New clinical partners", "text": "Expanding through Bridgeport Hospital, the Yale School of Medicine and the University of New Haven’s Tagliatela College of Engineering." }
+    ]
+  },
+  "affiliations": {
+    "eyebrow": "Affiliations",
+    "title": "The organizations behind our work",
+    "text": "Funding, space, clinical referrals and medical guidance all come from these partners."
+  },
+  "close": {
+    "eyebrow": "Get involved",
+    "title": "Join a team, or bring us a problem worth solving.",
+    "big": "Designed *with*, not for."
+  }
+}

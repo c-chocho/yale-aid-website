@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "eyebrow": "Contact us",
+    "title": "Contact the Y-AID president",
+    "text": "Write to Ramy about joining, proposing a project or supporting the club.",
+    "image": "img/club/williams-team.jpg",
+    "imageAlt": "Y-AID students with a young recipient wearing an orange prosthetic arm"
+  },
+  "reasonsIntro": {
+    "eyebrow": "What to write about",
+    "title": "Three reasons people email us",
+    "text": "Pick the closest one and the subject line is filled in for you."
+  },
+  "reasons": [
+    { "title": "Join a project team", "text": "Any Yale student, any major. Tell us your year, your major and which project caught your eye.", "button": "Ask to join", "subject": "Joining a Y-AID team" },
+    { "title": "Propose a project", "text": "Clinicians, caregivers, patients and disabled people: describe the barrier you face today, and we'll see whether a team can design around it.", "button": "Propose a project", "subject": "Project proposal for Y-AID" },
+    { "title": "Support the club", "text": "Materials, workshop time and expert advice all go straight into devices given away at no cost.", "button": "Offer support", "subject": "Supporting Y-AID" }
+  ],
+  "close": {
+    "eyebrow": "Yale Connect",
+    "title": "Y-AID is a registered Yale undergraduate organization.",
+    "big": "Say *hello.*"
+  }
+}

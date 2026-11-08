@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Projects 2026–27",
+    "title": "Eight devices in build, three concluded",
+    "text": "Each project starts with a person, a patient group or a clinician's referral. Every device goes to its user at no cost, and the designs stay open source.",
+    "image": "img/club/scale-team.jpg",
+    "imageAlt": "Y-AID students building the wheelchair scale prototype"
+  },
+  "currentIntro": {
+    "eyebrow": "Current projects",
+    "title": "The 2026–27 projects",
+    "text": "Want to work on one? [Write to the president](contact.html#join) with your year, your major and the project that caught your eye."
+  },
+  "current": [
+    { "name": "Northern", "category": "rehab", "tag": "Upper-limb rehabilitation", "description": "An affordable device that makes range-of-motion practice more engaging, at home or in outpatient care, within the guidance of a person’s therapist.", "stage": "New for 2026–27", "partner": "Rehabilitation", "image": "img/hand-proto.jpg", "imageAlt": "A white 3D-printed arm and hand frame with tendon strings", "featured": false },
+    { "name": "Hospital button", "category": "hospital", "tag": "Bedside controls", "description": "A textured silicone overlay in a 3D-printed frame, with indentations that guide the thumb so patients recovering from stroke can work a hospital remote.", "stage": "Clinical feedback stage", "partner": "With Milford Clinic", "image": "img/projects/hospital-button.jpg", "imageAlt": "A hospital bedside remote with large labelled buttons", "featured": true },
+    { "name": "Hospital urinal", "category": "hospital", "tag": "Hospital equipment", "description": "Simple attachments for standard hospital urinals that reduce spills and improve the handle, with no need to replace existing equipment.", "stage": "In design", "partner": "With Milford Clinic", "image": "img/hospital-bed.jpg", "imageAlt": "An empty adjustable hospital bed in a patient room", "featured": false },
+    { "name": "Adjustable prosthetic", "category": "prosthetics", "tag": "Prosthetics", "description": "An open-source, modular, 3D-printed arm that adjusts as a child grows, so single parts can be replaced instead of the whole device.", "stage": "Design phase", "partner": "With University of New Haven", "image": "img/hand-printed.jpg", "imageAlt": "A blue 3D-printed prosthetic hand with string tendons", "featured": false },
+    { "name": "Seated support after stroke", "category": "hospital", "tag": "Stroke care", "description": "An alert that tells nurses when a patient begins to slip from their chair, plus a non-restrictive way to keep them seated safely.", "stage": "In design", "partner": "With Milford Clinic", "image": "img/arduino.jpg", "imageAlt": "A microcontroller board wired to a distance sensor on a breadboard", "featured": false },
+    { "name": "Rehabilitation bike", "category": "rehab", "tag": "Rehabilitation", "description": "An accessible exercise bike that trains arms and legs together, with adjustable resistance, for people rebuilding strength after stroke.", "stage": "Prototyping from Fall 2026", "partner": "Rehabilitation", "image": "img/projects/rehab-bike.jpg", "imageAlt": "An arm-and-leg exercise bike frame in a lab", "featured": false },
+    { "name": "Wheelchair scale", "category": "mobility", "tag": "Mobility", "description": "A portable, lower-cost scale that lets people weigh themselves without transferring out of their wheelchair.", "stage": "First prototype built", "partner": "Open-source goal", "image": "img/projects/wheelchair-scale.jpg", "imageAlt": "A wheelchair user beside the team’s scale prototype", "featured": true },
+    { "name": "Rehabilitation glove", "category": "rehab", "tag": "Hand rehabilitation", "description": "A comfortable, low-cost robotic silicone glove that helps people practise gripping and everyday hand movements after stroke.", "stage": "Silicone glove prototyped", "partner": "Rehabilitation", "image": "img/projects/rehab-glove.jpg", "imageAlt": "A printed rehabilitation glove prototype worn on a hand", "featured": true }
+  ],
+  "pastIntro": {
+    "eyebrow": "Concluded projects",
+    "title": "Three concluded projects",
+    "text": "Each began with a single person's goal and shaped how the club designs today."
+  },
+  "past": [
+    { "name": "ForkLift", "tag": "Davis project", "description": "A button-controlled arm support that lifts the forearm, so a person with Duchenne muscular dystrophy can eat on their own.", "started": "Started 2022", "image": "img/projects/davis-forklift.jpg", "imageAlt": "A young wheelchair user trying the ForkLift arm support at a table" },
+    { "name": "Elbow-controlled prosthetic", "tag": "Williams project", "description": "A functional arm for a young Yale New Haven Hospital patient, with a detachable piece for basketball and silverware.", "started": "Started 2023", "image": "img/projects/williams.jpg", "imageAlt": "A child holding up an orange 3D-printed prosthetic arm" },
+    { "name": "The cello arm", "tag": "Cello project", "description": "A free 3D-printed arm that helped an 11-year-old cellist place her bow, later paired with a mobile app.", "started": "Started 2021", "image": "img/projects/cello.jpg", "imageAlt": "A printed prosthetic arm holding a cello bow on the strings" }
+  ],
+  "close": {
+    "eyebrow": "Next year's list",
+    "title": "Know someone who needs a device that doesn't exist yet? Tell us.",
+    "big": "Your idea, *built.*"
+  }
+}
