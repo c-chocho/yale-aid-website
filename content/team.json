@@ -12,11 +12,36 @@
     "text": "The board keeps contact with SEAS, the CEID and our faculty advisor, assigns projects and runs the annual buildathon."
   },
   "board": [
-    { "name": "Ramy Triki", "role": "President", "year": "2028", "photo": "img/people/ramy-triki.jpg" },
-    { "name": "Ray Niday", "role": "Vice President", "year": "2028", "photo": "img/people/ray-niday.jpg" },
-    { "name": "Maria Drabkin", "role": "Co-Vice President", "year": "2028", "photo": "img/people/maria-drabkin.jpg" },
-    { "name": "Joyce Jiang", "role": "Treasurer & Secretary", "year": "2029", "photo": "img/people/joyce-jiang.jpg" },
-    { "name": "Christopher Cho", "role": "Outreach Chair", "year": "2029", "photo": "img/people/christopher-cho.jpg" }
+    {
+      "name": "Ramy Triki",
+      "role": "President",
+      "year": "2028",
+      "photo": "img/people/ramy-triki.jpg"
+    },
+    {
+      "name": "Ray Niday",
+      "role": "Co-Vice President",
+      "year": "2028",
+      "photo": "img/people/ray-niday.jpg"
+    },
+    {
+      "name": "Maria Drabkin",
+      "role": "Co-Vice President",
+      "year": "2028",
+      "photo": "img/people/maria-drabkin.jpg"
+    },
+    {
+      "name": "Joyce Jiang",
+      "role": "Treasurer",
+      "year": "2029",
+      "photo": "img/people/joyce-jiang.jpg"
+    },
+    {
+      "name": "Christopher Cho",
+      "role": "Outreach Chair",
+      "year": "2029",
+      "photo": "img/people/christopher-cho.jpg"
+    }
   ],
   "managersIntro": {
     "eyebrow": "Project managers",
@@ -24,10 +49,29 @@
     "text": "Each manager takes charge of projects assigned by the vice presidents and works directly with recipients on what they want and need."
   },
   "managers": [
-    { "name": "Mashnoov Chowdhury", "role": "Project manager", "year": "2028", "photo": "img/people/mashnoov-chowdhury.jpg" },
-    { "name": "Jessie Pham", "role": "Project manager", "year": "2029", "photo": "img/people/jessie-pham.jpg" },
-    { "name": "Aryeh Hirshaut", "role": "Project manager", "year": "2029", "photo": "img/people/aryeh-hirshaut.jpg" },
-    { "name": "Lauren Thelwell", "role": "Project manager", "year": "2027", "photo": "" }
+    {
+      "name": "Mashnoov Chowdhury",
+      "role": "Project manager",
+      "year": "2028",
+      "photo": "img/people/mashnoov-chowdhury.jpg"
+    },
+    {
+      "name": "Jessie Pham",
+      "role": "Project manager",
+      "year": "2029",
+      "photo": "img/people/jessie-pham.jpg"
+    },
+    {
+      "name": "Aryeh Hirshaut",
+      "role": "Project manager",
+      "year": "2029",
+      "photo": "img/people/aryeh-hirshaut.jpg"
+    },
+    {
+      "name": "Lauren Thelwell",
+      "role": "Project manager",
+      "year": "2027"
+    }
   ],
   "advisor": {
     "name": "Daniel Wiznia, MD",
