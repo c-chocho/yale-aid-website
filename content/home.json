@@ -16,12 +16,20 @@
   "stats": {
     "eyebrow": "Y-AID in numbers",
     "title": "Building free devices since 2020",
-    "text": "Founded as Yale e-NABLE, the club became Y-AID and a Tikkun Olam Makers chapter in 2025.",
+    "text": "Founded as Yale e-NABLE, the club became Y-AID and a TOM chapter in 2025.",
     "items": [
-      { "number": "8", "label": "Projects in build" },
-      { "number": "3", "label": "Projects concluded" },
-      { "number": "9", "label": "Student leaders" },
-      { "number": "$0", "label": "Cost to the people we serve" }
+      {
+        "number": "8",
+        "label": "Projects in build"
+      },
+      {
+        "number": "3",
+        "label": "Projects concluded"
+      },
+      {
+        "number": "$0",
+        "label": "Cost to the people we serve"
+      }
     ]
   },
   "featured": {

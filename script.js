@@ -62,6 +62,86 @@
     }));
   }
 
+  // Popups: project and person cards open a <dialog> on the same page.
+  // The address bar gets #card-id so a popup can be linked to directly.
+  const dialogs = document.querySelectorAll('dialog.modal');
+  if (dialogs.length) {
+    const openModal = (dlg) => {
+      if (!dlg || dlg.open) return;
+      dlg.showModal();
+      document.documentElement.classList.add('modal-open');
+      const id = dlg.id.replace(/^m-/, '');
+      history.replaceState(null, '', '#' + id);
+    };
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-open]');
+      if (btn) { e.preventDefault(); openModal(document.getElementById(btn.dataset.open)); return; }
+      const card = e.target.closest('.advisor');
+      if (card && !e.target.closest('a')) { const b = card.querySelector('[data-open]'); if (b) openModal(document.getElementById(b.dataset.open)); }
+    });
+    // Tidy up after a popup closes (safe to run more than once).
+    const cleanup = (dlg) => {
+      if (dlg.open) return;
+      document.documentElement.classList.remove('modal-open');
+      if (location.hash === '#' + dlg.id.replace(/^m-/, '')) history.replaceState(null, '', location.pathname + location.search);
+    };
+    const closeModal = (dlg) => { if (dlg.open) dlg.close(); cleanup(dlg); };
+    dialogs.forEach((dlg) => {
+      dlg.addEventListener('click', (e) => {
+        if (e.target.closest('[data-close]')) { closeModal(dlg); return; }
+        // A click on the dark backdrop (outside the box) closes it
+        const r = dlg.getBoundingClientRect();
+        if (e.target === dlg && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom)) closeModal(dlg);
+      });
+      dlg.addEventListener('cancel', (e) => { e.preventDefault(); closeModal(dlg); });
+      dlg.addEventListener('close', () => cleanup(dlg));
+    });
+    const fromHash = () => { const id = decodeURIComponent(location.hash.slice(1)); if (id) openModal(document.getElementById('m-' + id)); };
+    fromHash();
+    window.addEventListener('hashchange', fromHash);
+  }
+
+  // Contact form: pick a topic, then send. With a form service set in Site settings the message
+  // is posted there; otherwise the visitor's email app opens with everything filled in.
+  const form = document.querySelector('.contact-form');
+  if (form) {
+    const status = form.querySelector('.form-status');
+    const subjectField = form.querySelector('[name="_subject"]');
+    const pick = () => {
+      const id = location.hash.slice(1);
+      const label = id && form.querySelector(`.topic#${CSS.escape(id)}`);
+      if (label) label.querySelector('input').checked = true;
+      sync();
+    };
+    const sync = () => { const r = form.querySelector('[name="topic"]:checked'); if (r && subjectField) subjectField.value = r.dataset.subject; };
+    form.addEventListener('change', sync);
+    pick();
+    window.addEventListener('hashchange', pick);
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const d = new FormData(form);
+      const topic = form.querySelector('[name="topic"]:checked');
+      const subject = topic ? topic.dataset.subject : 'Hello';
+      const endpoint = form.dataset.endpoint;
+      if (endpoint) {
+        status.className = 'form-status'; status.textContent = 'Sending…';
+        try {
+          const res = await fetch(endpoint, { method: 'POST', body: d, headers: { Accept: 'application/json' } });
+          if (!res.ok) throw new Error(res.status);
+          form.reset(); sync();
+          status.className = 'form-status ok'; status.textContent = 'Thanks! Your message was sent. We’ll reply by email.';
+        } catch (err) {
+          status.className = 'form-status'; status.innerHTML = `That didn’t send. Please email us at <a class="link" href="mailto:${form.dataset.mail}">${form.dataset.mail}</a>.`;
+        }
+        return;
+      }
+      const body = `${d.get('message')}\n\n${d.get('name')}\n${d.get('email')}`;
+      window.location.href = `mailto:${form.dataset.mail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      status.className = 'form-status'; status.innerHTML = `Your email app should open with the message ready to send. If it doesn’t, email us at <a class="link" href="mailto:${form.dataset.mail}">${form.dataset.mail}</a>.`;
+    });
+  }
+
   // Moment 2: a photograph develops from greyscale to colour when it comes into view
   const dev = document.querySelectorAll('.develop');
   if (dev.length) {

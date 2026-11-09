@@ -74,7 +74,8 @@ content:
         label: Label
         type: string
   - name: featured
-    label: Featured projects heading (tick "Featured" on up to 3 projects)
+    label: Featured projects heading (tick "Featured" on up to 3 current or concluded
+      projects)
     type: object
     fields:
     - name: eyebrow
@@ -300,6 +301,29 @@ content:
     - name: featured
       label: Featured on the home page
       type: boolean
+    - name: lead
+      label: Project manager
+      type: string
+    - name: team
+      label: Team members
+      type: string
+    - name: overview
+      label: 'Popup: overview'
+      type: text
+    - name: need
+      label: 'Popup: who it’s for'
+      type: text
+    - name: design
+      label: 'Popup: how it works'
+      type: text
+    - name: status
+      label: 'Popup: where it stands'
+      type: text
+    - name: gallery
+      label: 'Popup: more photos'
+      type: image
+      options:
+        multiple: true
   - name: pastIntro
     label: Concluded projects heading
     type: object
@@ -336,6 +360,32 @@ content:
     - name: imageAlt
       label: Photo description
       type: string
+    - name: featured
+      label: Featured on the home page
+      type: boolean
+    - name: lead
+      label: Project manager
+      type: string
+    - name: team
+      label: Team members
+      type: string
+    - name: overview
+      label: 'Popup: overview'
+      type: text
+    - name: need
+      label: 'Popup: who it’s for'
+      type: text
+    - name: design
+      label: 'Popup: how it works'
+      type: text
+    - name: status
+      label: 'Popup: outcome'
+      type: text
+    - name: gallery
+      label: 'Popup: more photos'
+      type: image
+      options:
+        multiple: true
   - name: close
     label: Closing band
     type: object
@@ -399,11 +449,20 @@ content:
       label: Position
       type: string
     - name: year
-      label: Class year
+      label: Class year (shown in the popup)
       type: string
     - name: photo
       label: Photo (leave empty to show initials)
       type: image
+    - name: college
+      label: Residential college
+      type: string
+    - name: major
+      label: Major(s)
+      type: string
+    - name: bio
+      label: Bio (leave a blank line between paragraphs)
+      type: text
   - name: managersIntro
     label: Project managers heading
     type: object
@@ -429,11 +488,24 @@ content:
       label: Position
       type: string
     - name: year
-      label: Class year
+      label: Class year (shown in the popup)
       type: string
     - name: photo
       label: Photo (leave empty to show initials)
       type: image
+    - name: college
+      label: Residential college
+      type: string
+    - name: major
+      label: Major(s)
+      type: string
+    - name: projects
+      label: Projects they manage (shown on their card)
+      type: string
+      list: true
+    - name: bio
+      label: Bio (leave a blank line between paragraphs)
+      type: text
   - name: advisor
     label: Faculty advisor
     type: object
@@ -445,11 +517,14 @@ content:
       label: Title
       type: string
     - name: text
-      label: About
+      label: Short text on the page
       type: text
     - name: photo
       label: Photo
       type: image
+    - name: bio
+      label: Popup bio
+      type: text
   - name: close
     label: Closing band
     type: object
@@ -488,8 +563,8 @@ content:
     - name: imageAlt
       label: Photo description (for screen readers)
       type: string
-  - name: reasonsIntro
-    label: Reasons heading
+  - name: formIntro
+    label: Contact form heading
     type: object
     fields:
     - name: eyebrow
@@ -501,25 +576,22 @@ content:
     - name: text
       label: Text
       type: text
-  - name: reasons
-    label: Reasons to email (the first three link from the menu)
+  - name: topics
+    label: 'Form topics (the first three are linked as #join, #partner, #support)'
     type: object
     list: true
     fields:
     - name: title
-      label: Title
+      label: Topic
       type: string
     - name: text
-      label: Text
-      type: text
-    - name: button
-      label: Button text
+      label: Short description
       type: string
     - name: subject
       label: Email subject line
       type: string
   - name: close
-    label: Closing band
+    label: Mailing list band
     type: object
     fields:
     - name: eyebrow
@@ -546,26 +618,21 @@ content:
   - name: footerAbout
     label: Footer description
     type: text
-  - name: contactName
-    label: Contact person
-    type: string
-  - name: contactRole
-    label: Contact's position
-    type: string
-  - name: contactYear
-    label: Contact's class year
-    type: string
   - name: contactEmail
-    label: Contact email
+    label: Email that receives messages
     type: string
   - name: yaleConnectUrl
-    label: Yale Connect link
+    label: YaleConnect mailing list link
+    type: string
+  - name: formEndpoint
+    label: Form service address (optional, e.g. a Formspree link; empty = open the
+      visitor’s email app)
     type: string
   - name: photoCredits
     label: Photo credits (footer)
     type: text
   - name: affiliations
-    label: Affiliations
+    label: Affiliations (logos)
     type: object
     list: true
     fields:
@@ -573,5 +640,11 @@ content:
       label: Name
       type: string
     - name: description
-      label: Description
+      label: Full name (shown on hover)
       type: string
+    - name: url
+      label: Website link
+      type: string
+    - name: logo
+      label: Logo (a transparent PNG or SVG works best)
+      type: image

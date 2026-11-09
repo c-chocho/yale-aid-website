@@ -2,35 +2,45 @@
   "name": "Y-AID",
   "fullName": "Yale Assistive Innovation & Design",
   "footerAbout": "A Yale undergraduate organization and TOM chapter, formerly Yale e-NABLE, building free assistive devices for the Greater New Haven community.",
-  "contactName": "Ramy Triki",
-  "contactRole": "President",
-  "contactYear": "2028",
   "contactEmail": "ramy.triki@yale.edu",
   "yaleConnectUrl": "https://yaleconnect.yale.edu/",
   "affiliations": [
     {
       "name": "TOM",
-      "description": "Tikkun Olam Makers: Y-AID is a chapter of the global network"
+      "description": "TOM: Y-AID is a chapter of the global network",
+      "url": "https://tomglobal.org/",
+      "logo": "img/logos/tom.jpg"
     },
     {
       "name": "Tsai CITY",
-      "description": "Tsai Center for Innovative Thinking at Yale"
+      "description": "Tsai Center for Innovative Thinking at Yale",
+      "url": "https://city.yale.edu/",
+      "logo": "img/logos/tsai-city.svg"
     },
     {
       "name": "Yale SEAS",
-      "description": "Yale School of Engineering & Applied Science"
+      "description": "Yale School of Engineering & Applied Science",
+      "url": "https://engineering.yale.edu/",
+      "logo": "img/logos/yale-engineering.svg"
     },
     {
       "name": "Yale CEID",
-      "description": "Center for Engineering Innovation & Design"
+      "description": "Center for Engineering Innovation & Design",
+      "url": "https://ceid.yale.edu/",
+      "logo": "img/logos/yale-ceid.png"
     },
     {
       "name": "Milford Clinic",
-      "description": "Bridgeport Hospital, Milford Campus rehabilitation team"
+      "description": "Bridgeport Hospital, Milford Campus rehabilitation team",
+      "url": "https://www.bridgeporthospital.org/",
+      "logo": "img/logos/yale-new-haven-health.svg"
     },
     {
       "name": "Yale Orthopaedics",
-      "description": "Department of Orthopaedics & Rehabilitation, Yale School of Medicine"
+      "description": "Department of Orthopaedics & Rehabilitation, Yale School of Medicine",
+      "url": "https://medicine.yale.edu/ortho/",
+      "logo": "img/logos/yale-medicine.svg"
     }
-  ]
+  ],
+  "formEndpoint": ""
 }
