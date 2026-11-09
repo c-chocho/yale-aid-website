@@ -16,31 +16,46 @@
       "name": "Ramy Triki",
       "role": "President",
       "year": "2028",
-      "photo": "img/people/ramy-triki.jpg"
+      "photo": "img/people/ramy-triki.jpg",
+      "college": "Silliman",
+      "major": "Biomedical Engineering, Global Health Studies",
+      "bio": "I’m a rising junior studying Biomedical Engineering and Global Health on the pre-med track, driven by a deep interest in building medical technologies that expand access to care in underserved communities. Outside of academics, I enjoy playing tennis, cooking new recipes and walks to East Rock Park."
     },
     {
       "name": "Ray Niday",
       "role": "Co-Vice President",
       "year": "2028",
-      "photo": "img/people/ray-niday.jpg"
+      "photo": "img/people/ray-niday.jpg",
+      "college": "Morse",
+      "major": "Mechanical Engineering",
+      "bio": "Howdy, I’m a rising junior from eastern Colorado interested in prosthetic design and accessibility engineering. My main hobbies are dancing and enjoying the outdoors, and I’m driven by a desire to make that level of autonomy and exploration available for everyone. I joined Y-AID as a first-year and am excited to continue working on the life-changing projects we pursue."
     },
     {
       "name": "Maria Drabkin",
       "role": "Co-Vice President",
       "year": "2028",
-      "photo": "img/people/maria-drabkin.jpg"
+      "photo": "img/people/maria-drabkin.jpg",
+      "college": "Jonathan Edwards",
+      "major": "Mechanical Engineering",
+      "bio": "Hi! My name is Maria Drabkin, and I am a rising junior from Cleveland, Ohio, studying mechanical engineering (ABET). On campus, I am involved in Project Liquid, where I served as the structures lead; SWE, where I acted as the treasury fellow; the Glove Project in Y-AID; Y-AID, as co-vice president; and the Yale Scientific Magazine, as an artist. This summer, I interned at Medtronic as a mechanical engineering R&D intern, conducting exploratory testing with a hernia mesh fixation device. Outside of engineering, I love to paint, play the flute and play tennis."
     },
     {
       "name": "Joyce Jiang",
       "role": "Treasurer",
       "year": "2029",
-      "photo": "img/people/joyce-jiang.jpg"
+      "photo": "img/people/joyce-jiang.jpg",
+      "college": "Benjamin Franklin",
+      "major": "Biomedical Engineering",
+      "bio": "I am a rising sophomore at Yale from Philadelphia, PA, studying Biomedical Engineering on the pre-med track. I want to use engineering to help people, specifically in medicine, and to support underserved communities. In my free time, I like to hang out with friends, play sports and play board games."
     },
     {
       "name": "Christopher Cho",
       "role": "Outreach Chair",
       "year": "2029",
-      "photo": "img/people/christopher-cho.jpg"
+      "photo": "img/people/christopher-cho.jpg",
+      "college": "Pauli Murray",
+      "major": "Mechanical Engineering",
+      "bio": "Chris is a rising sophomore in Pauli Murray College studying Mechanical Engineering. Originally from Bangkok, he now considers Yale University his second home. On campus, he is involved in Yale Assistive Innovation and Design, Bulldogs Racing, Yale’s Undergraduate Mentorship Program, Yale Pitches & Tones A Cappella and the Students’ Association of Thais at Yale. Christopher has enjoyed exploring his interests in engineering, the arts and culture. His work in engineering is driven by a long-standing interest in STEM and a focus on building solutions that create meaningful, real-world impact."
     }
   ],
   "managersIntro": {
@@ -53,31 +68,57 @@
       "name": "Mashnoov Chowdhury",
       "role": "Project manager",
       "year": "2028",
-      "photo": "img/people/mashnoov-chowdhury.jpg"
+      "photo": "img/people/mashnoov-chowdhury.jpg",
+      "college": "Ezra Stiles",
+      "major": "Biomedical Engineering",
+      "projects": [
+        "[Placeholder] Project name"
+      ],
+      "bio": "Hey there! I’m Mashnoov Chowdhury, a pre-med studying biomedical engineering in the bioimaging and biocomputation concentration. In my free time you’ll find me reading articles on philosophy and culture, doing research for my biocomputation lab, or hanging out with friends."
     },
     {
       "name": "Jessie Pham",
       "role": "Project manager",
       "year": "2029",
-      "photo": "img/people/jessie-pham.jpg"
+      "photo": "img/people/jessie-pham.jpg",
+      "college": "Saybrook",
+      "major": "Biomedical Engineering",
+      "projects": [
+        "Rehabilitation glove"
+      ],
+      "bio": "Hello! My name is Jessie Pham and I am a first-year from Minnesota studying Biomedical Engineering. I’m always interested in learning and experimenting with new things, whether that’s through CAD, mixing reagents in the lab, or cooking! Through the supportive community in Y-AID, I hope to use engineering to aid others."
     },
     {
       "name": "Aryeh Hirshaut",
       "role": "Project manager",
       "year": "2029",
-      "photo": "img/people/aryeh-hirshaut.jpg"
+      "photo": "img/people/aryeh-hirshaut.jpg",
+      "college": "Pauli Murray",
+      "major": "Biomedical Engineering",
+      "projects": [
+        "Wheelchair scale"
+      ],
+      "bio": "Hi! I’m Aryeh Hirshaut, and I’m currently a first-year in Pauli Murray College! I am a Biomedical Engineering major with a concentration in Biomechanics and Mechanobiology, and a hopeful pre-med. On campus I am a project lead for Y-AID, the treasurer of the curling team, a layout editor for the Yale Daily News, and I do research as part of Yale’s Computational Biomechanics Lab!"
     },
     {
       "name": "Lauren Thelwell",
       "role": "Project manager",
-      "year": "2027"
+      "year": "2027",
+      "photo": "",
+      "college": "",
+      "major": "",
+      "projects": [
+        "[Placeholder] Project name"
+      ],
+      "bio": "[Placeholder] Paste Lauren’s bio here."
     }
   ],
   "advisor": {
     "name": "Daniel Wiznia, MD",
     "role": "Faculty advisor",
     "text": "An orthopaedic surgeon at the Yale School of Medicine, Dr. Wiznia gives the club medical expertise and guidance from his clinical experience.",
-    "photo": "img/people/daniel-wiznia.jpg"
+    "photo": "img/people/daniel-wiznia.jpg",
+    "bio": "Dr. Daniel Wiznia is an orthopaedic surgeon at the Yale School of Medicine. He gives the club medical expertise and guidance from his clinical experience.\n\n[Placeholder] Add more about Dr. Wiznia’s work here."
   },
   "close": {
     "eyebrow": "Join the team",
